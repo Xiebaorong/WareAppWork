@@ -27,7 +27,7 @@ import butterknife.BindView;
 /**
  * 登录Activity
  */
-public class LoginActivity extends BaseActivity implements ILoginView,CompoundButton.OnCheckedChangeListener {
+public class LoginActivity extends BaseActivity implements ILoginView, CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "LoginActivity";
     @BindView(R.id.iv_app_logo)
     ImageView ivAppLogo;
@@ -57,12 +57,12 @@ public class LoginActivity extends BaseActivity implements ILoginView,CompoundBu
     protected void initView() {
         ivAppLogo.setBackgroundResource(R.mipmap.suo);
         tvAppName.setText(mContext.getText(R.string.app_name));
-
+        registerOrForgetLogin();
         cbRememberPassLogin.setOnCheckedChangeListener(this);
 
         String username = loginPresenter.getUsername();
         String password = loginPresenter.getPassword();
-        if (!("").equals(username)|| !("").equals(password)) {
+        if (!("").equals(username) || !("").equals(password)) {
             etNameLogin.setText(username);
             etPassLogin.setText(password);
             cbRememberPassLogin.setChecked(true);
@@ -83,7 +83,6 @@ public class LoginActivity extends BaseActivity implements ILoginView,CompoundBu
     @Override
     protected void onResume() {
         super.onResume();
-        registerOrForgetLogin();
     }
 
     private void registerOrForgetLogin() {
@@ -93,9 +92,8 @@ public class LoginActivity extends BaseActivity implements ILoginView,CompoundBu
         clickString.setSpan(new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                Log.e(TAG, "registerOrForgetLogin: 我要注册" );
-                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
-                 finish();
+                Log.e(TAG, "registerOrForgetLogin: 我要注册");
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
 
             @Override
@@ -110,7 +108,7 @@ public class LoginActivity extends BaseActivity implements ILoginView,CompoundBu
         clickString2.setSpan(new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                Log.e(TAG, "registerOrForgetLogin: 忘记密码" );
+                Log.e(TAG, "registerOrForgetLogin: 忘记密码");
             }
 
             @Override
@@ -177,7 +175,6 @@ public class LoginActivity extends BaseActivity implements ILoginView,CompoundBu
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         loginPresenter.isSaveMag(isChecked);
     }
-
 
 
 }

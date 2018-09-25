@@ -30,11 +30,11 @@ public class RegisterActivity extends BaseActivity {
 
     @Override
     protected int switchoverAnimationIn() {
-        return LEFT;
+        return RIGHT;
     }
 
     @Override
     protected int switchoverAnimationOut() {
-        return 0;
+        return LEFT;
     }
 }
