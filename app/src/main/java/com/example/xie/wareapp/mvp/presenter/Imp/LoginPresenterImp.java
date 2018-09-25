@@ -3,14 +3,22 @@ package com.example.xie.wareapp.mvp.presenter.Imp;
 import android.util.Log;
 
 
+import com.example.xie.wareapp.callback.LoadCallBack;
+import com.example.xie.wareapp.mvp.model.User;
 import com.example.xie.wareapp.mvp.presenter.ILoginPresenter;
 import com.example.xie.wareapp.mvp.view.ILoginView;
+import com.example.xie.wareapp.ui.activity.LoginActivity;
+import com.example.xie.wareapp.utils.AppUrl;
+import com.example.xie.wareapp.utils.OkhttpUtil;
+import com.example.xie.wareapp.utils.SharedPreferencesUtil;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
+import okhttp3.Call;
+import okhttp3.Response;
 
 
 /**
@@ -22,7 +30,7 @@ public class LoginPresenterImp implements ILoginPresenter {
     ILoginView loginView;
     private boolean isSaveUserMsg;
 
-    public LoginPresenterImp(ILoginView view) {
+    public LoginPresenterImp(LoginActivity view) {
         loginView = view;
     }
 

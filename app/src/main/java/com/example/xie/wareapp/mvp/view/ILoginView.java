@@ -3,10 +3,6 @@ package com.example.xie.wareapp.mvp.view;
 import android.content.Context;
 import android.text.SpannableString;
 
-/**
- * Created by 7invensun on 2018/9/19.
- */
-
 public interface ILoginView {
     Context getContext();
 

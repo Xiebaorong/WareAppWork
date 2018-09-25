@@ -18,12 +18,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.example.xie.wareapp.R;
+import com.example.xie.wareapp.mvp.presenter.Imp.LoginPresenterImp;
+import com.example.xie.wareapp.mvp.view.ILoginView;
+
 import butterknife.BindView;
 
 /**
  * 登录Activity
  */
-public class LoginActivity extends BaseActivity implements CompoundButton.OnCheckedChangeListener {
+public class LoginActivity extends BaseActivity implements ILoginView,CompoundButton.OnCheckedChangeListener {
     private static final String TAG = "LoginActivity";
     @BindView(R.id.iv_app_logo)
     ImageView ivAppLogo;
@@ -37,7 +41,7 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
     CheckBox cbRememberPassLogin;
     @BindView(R.id.tv_registerAforget_login)
     TextView tvRegisterAforgetLogin;
-    private LoginPresenterCompl loginPresenter;
+    private LoginPresenterImp loginPresenter;
 
     @Override
     public int getLayout() {
@@ -46,7 +50,7 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
 
     @Override
     protected void OnActCreate(Bundle savedInstanceState) {
-        loginPresenter = new LoginPresenterCompl(this);
+        loginPresenter = new LoginPresenterImp(this);
     }
 
     @Override
@@ -64,6 +68,16 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
             cbRememberPassLogin.setChecked(true);
         }
 
+    }
+
+    @Override
+    protected int switchoverAnimationIn() {
+        return RIGHT;
+    }
+
+    @Override
+    protected int switchoverAnimationOut() {
+        return LEFT;
     }
 
     @Override

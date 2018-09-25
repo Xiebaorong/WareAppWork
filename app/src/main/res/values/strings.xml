@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WareApp</string>
+    <string name="app_table">appTable</string>
 </resources>

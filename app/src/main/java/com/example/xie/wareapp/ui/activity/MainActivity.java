@@ -1,7 +1,9 @@
-package com.example.xie.wareapp;
+package com.example.xie.wareapp.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.xie.wareapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
