@@ -1,11 +1,13 @@
 package com.example.xie.wareapp.ui.activity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.example.xie.wareapp.R;
@@ -22,6 +24,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public static final int BOTTOM = 4;
     public static final int SCALE = 5;
     public static final int FADE = 6;
+    private ProgressDialog progressDialog;
     private Toast toast;
     private Unbinder bind;
     private Handler baseHandler = new Handler() {
@@ -129,7 +132,38 @@ public abstract class BaseActivity extends AppCompatActivity {
             toast.setText(content);
         }
         toast.show();
-        baseHandler.removeCallbacksAndMessages(1);
+        baseHandler.removeCallbacksAndMessages(MSG_WHAT_SHOWTOAST);
+    }
+
+    public void showProgressDialog(String msg) {
+        if (progressDialog != null && progressDialog.isShowing()) {
+            progressDialog.dismiss();
+            progressDialog = null;
+        }
+        progressDialog = new ProgressDialog(mContext);
+        progressDialog.setMessage(msg);
+        progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(true);//indeterminateDrawable="@drawable/anim"
+        progressDialog.setIndeterminateDrawable(getResources().getDrawable(R.drawable.net_progress_animation,null));//R.drawable.net_progress_animation
+        try {
+            progressDialog.show();
+        } catch (WindowManager.BadTokenException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    /**
+     * 取消对话框显示
+     */
+    public void disMissDialog() {
+        try {
+            if (progressDialog != null && progressDialog.isShowing()) {
+                progressDialog.dismiss();
+                progressDialog = null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

@@ -34,7 +34,6 @@ public class LoginPresenterImp implements ILoginPresenter {
         loginView = view;
     }
 
-
     @Override
     public void isSaveMag(boolean isSave) {
         isSaveUserMsg = isSave;

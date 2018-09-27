@@ -1,10 +1,4 @@
 <resources>
     <string name="app_name">WareApp</string>
     <string name="app_table">appTable</string>
-
-    <style name="EditText" parent="Theme.AppCompat.Light">
-        <item name="colorControlNormal">@color/colorGrey</item>
-        <item name="colorControlActivated">@color/colorGrey</item>
-    </style>
-
 </resources>

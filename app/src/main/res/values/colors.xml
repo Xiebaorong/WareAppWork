@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGrey">#ECECEC</color>
+    <color name="colorDarkGrey">#CBCFD0</color>
     <color name="colorBlack">#00002f</color>
     <color name="colorStartupStatusBar">#FFDADF</color>
 </resources>
