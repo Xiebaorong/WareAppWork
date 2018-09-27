@@ -1,9 +1,7 @@
 package com.example.xie.wareapp.ui.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +10,6 @@ import android.widget.TextView;
 import com.example.xie.wareapp.R;
 
 import butterknife.BindView;
-import butterknife.OnClick;
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {
     private static final String TAG = "RegisterActivity";
