@@ -52,6 +52,7 @@
         android:layout_below="@id/ve_underline1_register"
         android:layout_marginTop="5dp"
         android:hint="手机号"
+        android:maxLength="11"
         android:inputType="number"
         android:background="@null"
         />

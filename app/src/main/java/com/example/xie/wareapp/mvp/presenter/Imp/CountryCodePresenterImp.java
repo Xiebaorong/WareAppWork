@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.widget.ListView;
 
 import com.example.xie.wareapp.R;
 import com.example.xie.wareapp.mvp.model.CityBean;
@@ -42,6 +43,12 @@ public class CountryCodePresenterImp implements ICountryCodePresenter {
     public void findCountrtCode(Context context) {
         List<CityBean> list = CountryCodeUtil.GetCountryZipCode(context);
         countryCodeView.getCountryCodeList(list);
+    }
+
+    @Override
+    public void getCityModel(ListView listView, int position) {
+        CityBean cityModel = (CityBean) listView.getAdapter().getItem(position);
+        countryCodeView.setCityBean(cityModel);
     }
 
 }

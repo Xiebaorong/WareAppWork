@@ -13,4 +13,5 @@ public interface ICountryCodeView {
 
     void networkConnectedState(boolean connected);
 
+    void setCityBean(CityBean model);
 }

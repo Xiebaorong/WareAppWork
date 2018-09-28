@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">WareApp</string>
     <string name="app_table">appTable</string>
+    <string name="default_code">86</string>
 </resources>

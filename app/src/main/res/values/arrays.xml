@@ -3,100 +3,69 @@
     <string-array name="CountryCodes">
         <item>93,A,阿富汗</item>
         <item>355,A,阿尔巴尼亚</item>
-        <item>213,D,阿尔及利亚</item>
+        <item>213,A,阿尔及利亚</item>
+        <item>968,A,阿曼</item>
+        <item>971,A,阿拉伯联合酋长国</item>
+        <item>54,A,阿根廷</item>
+        <item>994,A,阿塞拜疆</item>
         <item>376,A,安道尔共和国</item>
         <item>244,A,安哥拉</item>
-        <!--<item>672,AQ,未知</item>-->
-        <item>54,A,阿根廷</item>
-        <item>374,A,亚美尼亚</item>
-        <!--<item>297,AW,未知</item>-->
+        <item>353,A,爱尔兰</item>
+        <item>372,A,爱沙尼亚</item>
+        <item>20,A,埃及</item>
+        <item>251,A,埃塞俄比亚</item>
         <item>61,A,澳大利亚</item>
         <item>43,A,奥地利</item>
-        <item>994,A,阿塞拜疆</item>
+        <item>55,B,巴西</item>
         <item>973,B,巴林</item>
-        <item>880,B,孟加拉国</item>
+        <item>92,B,巴基斯坦</item>
+        <item>507,B,巴拿马</item>
+        <item>675,B,巴布亚新几内亚</item>
+        <item>595,B,巴拉圭</item>
         <item>375,B,白俄罗斯</item>
         <item>32,B,比利时</item>
         <item>501,B,伯利兹</item>
-        <item>229,B,贝宁</item>
-        <!--<item>975,BT,未知</item>-->
         <item>591,B,玻利维亚</item>
-        <!--<item>387,BA,</item>-->
+        <item>1,B,波多黎各</item>
+        <item>229,B,贝宁</item>
         <item>267,B,博茨瓦纳</item>
-        <item>55,B,巴西</item>
-        <item>673,B,文莱</item>
         <item>359,B,保加利亚</item>
         <item>226,B,布基纳法索</item>
-        <item>95,M,缅甸</item>
         <item>257,B,布隆迪</item>
-        <item>855,K,柬埔寨</item>
-        <item>237,C,喀麦隆</item>
-        <item>1,C,加拿大</item>
-        <!--<item>238,CV,</item>-->
-        <!--<item>236,CF,</item>-->
-        <item>235,T,印度尼西亚</item>
-        <item>56,C,智利</item>
-        <item>86,C,中国</item>
-        <!--<item>61,CX,</item>-->
-        <!--<item>61,CC,</item>-->
-        <item>57,C,哥伦比亚</item>
-        <!--<item>269,KM,</item>-->
-        <item>242,C,刚果</item>
-        <!--<item>243,CD,</item>-->
-        <item>682,C,库克群岛</item>
-        <item>506,C,哥斯达黎加</item>
-        <!--<item>385,HR,</item>-->
-        <item>53,C,古巴</item>
-        <item>357,C,塞浦路斯</item>
-        <item>420,C,捷克</item>
+        <item>850,C,朝鲜</item>
         <item>45,D,丹麦</item>
-        <item>253,D,吉布提   </item>
-        <!--<item>670,TL,</item>-->
+        <item>49,D,德国</item>
+        <item>228,D,多哥</item>
+        <item>7,E,俄罗斯</item>
         <item>593,E,厄瓜多尔</item>
-        <item>20,E,埃及</item>
-        <item>503,S,萨尔瓦多</item>
-        <!--<item>240,GQ,</item>-->
-        <!--<item>291,ER,</item>-->
-        <item>372,E,爱沙尼亚</item>
-        <item>251,E,埃塞俄比亚</item>
-        <!--<item>500,FK,</item>-->
-        <!--<item>298,FO,</item>-->
         <item>679,F,斐济</item>
+        <item>63,F,菲律宾</item>
         <item>358,F,芬兰</item>
         <item>33,F,法国</item>
-        <item>689,P,法属玻利尼西亚</item>
-        <!--<item>241,GA,</item>-->
+        <item>53,G,古巴</item>
         <item>220,G,冈比亚</item>
         <item>995,G,格鲁吉亚</item>
-        <item>49,D,德国</item>
-        <item>233,G,加纳</item>
-        <item>350,G,直布罗陀</item>
-        <item>30,G,希腊</item>
-        <!--<item>299,GL,</item>-->
-        <item>502,G,危地马拉</item>
-        <item>224,G,几内亚</item>
-        <!--<item>245,GW,</item>-->
-        <!--<item>592,GY,</item>-->
+        <item>57,G,哥伦比亚</item>
+        <item>242,G,刚果</item>
+        <item>506,G,哥斯达黎加</item>
+        <item>7,H,哈萨克斯坦</item>
+        <item>31,H,荷兰</item>
+        <item>82,H,韩国</item>
         <item>509,H,海地</item>
         <item>504,H,洪都拉斯</item>
-        <item>852,H,香港</item>
-        <item>36,H,匈牙利</item>
-        <item>91,I,印度</item>
-        <item>62,I,印度尼西亚</item>
-        <item>98,I,伊朗</item>
-        <item>964,I,伊拉克</item>
-        <item>353,I,爱尔兰</item>
-        <!--<item>44,IM,</item>-->
-        <item>972,I,以色列</item>
-        <item>39,I,意大利</item>
-        <!--<item>225,CI,</item>-->
-        <item>81,J,日本</item>
-        <item>962,J,约旦</item>
-        <item>7,K,哈萨克斯坦</item>
+        <item>1,J,加拿大</item>
+        <item>233,J,加纳</item>
+        <item>420,J,捷克</item>
+        <item>224,J,几内亚</item>
+        <item>253,J,吉布提</item>
+        <item>263,J,津巴布韦</item>
+        <item>855,J,柬埔寨</item>
+        <item>996,J,吉尔吉斯坦</item>
+        <item>237,K,喀麦隆</item>
+        <item>682,K,库克群岛</item>
         <item>254,K,肯尼亚</item>
-        <!--<item>686,KI,</item>-->
-        <!--<item>965,KW,</item>-->
-        <item>996,K,吉尔吉斯坦</item>
+        <item>974,K,卡塔尔</item>
+        <item>40,L,罗马尼亚</item>
         <item>856,L,老挝</item>
         <item>371,L,拉脱维亚</item>
         <item>961,L,黎巴嫩</item>
@@ -106,7 +75,9 @@
         <item>423,L,列支敦士登</item>
         <item>370,L,立陶宛</item>
         <item>352,L,卢森堡</item>
-        <item>853,M,澳门</item>
+        <item>95,M,缅甸</item>
+        <item>880,M,孟加拉国</item>
+        <item>1,M,美国</item>
         <item>389,M,马其顿文</item>
         <item>261,M,马达加斯加</item>
         <item>265,M,马拉维</item>
@@ -114,90 +85,83 @@
         <item>960,M,马尔代夫</item>
         <item>223,M,马里</item>
         <item>356,M,马耳他</item>
-        <!--<item>692,MH,</item>-->
-        <!--<item>222,MR,</item>-->
         <item>230,M,毛里求斯</item>
-        <!--<item>262,YT,</item>-->
         <item>52,M,墨西哥</item>
-        <!--<item>691,FM,</item>-->
         <item>373,M,摩尔多瓦</item>
         <item>377,M,摩纳哥</item>
-        <item>976,M,蒙古</item>
-        <!--<item>382,ME,</item>-->
         <item>212,M,摩洛哥</item>
+        <item>51,M,秘鲁</item>
+        <item>976,M,蒙古</item>
         <item>258,M,莫桑比克</item>
         <item>264,N,纳米比亚</item>
         <item>674,N,瑙鲁</item>
         <item>977,N,尼泊尔</item>
-        <item>31,N,荷兰</item>
-        <!--<item>599,AN,</item>-->
-        <!--<item>687,NC,</item>-->
-        <item>64,N,新西兰</item>
         <item>505,N,尼加拉瓜</item>
         <item>227,N,尼日尔</item>
         <item>234,N,尼日利亚</item>
-        <item>850,K,朝鲜</item>
+        <item>27,N,南非</item>
         <item>47,N,挪威</item>
-        <item>968,O,阿曼</item>
-        <item>92,P,巴基斯坦</item>
-        <item>507,P,巴拿马</item>
-        <item>675,P,巴布亚新几内亚</item>
-        <item>595,P,巴拉圭</item>
-        <item>51,P,秘鲁</item>
-        <item>63,P,菲律宾</item>
-
+        <item>689,P,法属玻利尼西亚</item>
         <item>48,P,波兰</item>
         <item>351,P,葡萄牙</item>
-        <item>1,P,波多黎各</item>
-        <item>974,Q,卡塔尔</item>
-        <item>40,R,罗马尼亚</item>
-        <item>7,R,俄罗斯</item>
+        <item>81,R,日本</item>
+        <item>46,R,瑞典</item>
+        <item>41,R,瑞士</item>
+        <item>94,R,斯里兰卡</item>
+        <item>966,S,沙特阿拉伯</item>
+        <item>503,S,萨尔瓦多</item>
         <item>378,S,圣马力诺</item>
         <item>239,S,圣多美和普林西比</item>
-        <item>966,S,沙特阿拉伯</item>
+        <item>357,S,塞浦路斯</item>
         <item>221,S,塞内加尔</item>
         <item>232,S,塞拉利昂</item>
-        <item>65,S,新加坡</item>
+        <item>290,S,塞波尼斯-克罗地亚文</item>
         <item>421,S,斯洛伐克</item>
         <item>386,S,斯洛文尼亚</item>
         <item>677,S,所罗门群岛</item>
         <item>252,S,索马里</item>
-        <item>27,Z,南非</item>
-        <item>82,K,韩国</item>
-        <item>34,E,西班牙</item>
-        <item>94,L,斯里兰卡</item>
-        <item>290,S,塞波尼斯-克罗地亚文</item>
-        <!--<item>508,PM,</item>-->
         <item>249,S,苏丹</item>
         <item>597,S,苏里南</item>
         <item>268,S,斯威士兰</item>
-        <item>46,S,瑞典</item>
-        <item>41,C,瑞士</item>
-        <item>963,S,叙利亚</item>
-        <item>886,T,台湾省</item>
-        <item>992,T,塔吉克斯坦</item>
-        <item>255,T,坦桑尼亚</item>
         <item>66,T,泰国</item>
-        <item>228,T,多哥</item>
-        <!--<item>690,TK,</item>-->
         <item>676,T,汤加</item>
         <item>216,T,突尼斯</item>
-        <item>90,T,土耳其</item>
         <item>993,T,土库曼斯坦</item>
-        <!--<item>688,TV,</item>-->
-        <item>971,A,阿拉伯联合酋长国</item>
-        <item>256,U,乌干达</item>
-        <item>44,G,英国</item>
-        <item>380,U,乌克兰</item>
-        <item>598,U,乌拉圭</item>
-        <item>1,U,美国</item>
-        <item>998,U,乌兹别克斯坦</item>
-        <item>58,V,委内瑞拉</item>
-        <item>84,V,越南</item>
-        <!--<item>681,WF,</item>-->
+        <item>90,T,土耳其</item>
+        <item>992,T,塔吉克斯坦</item>
+        <item>255,T,坦桑尼亚</item>
+        <item>256,W,乌干达</item>
+        <item>380,W,乌克兰</item>
+        <item>598,W,乌拉圭</item>
+        <item>998,W,乌兹别克斯坦</item>
+        <item>58,W,委内瑞拉</item>
+        <item>502,W,危地马拉</item>
+        <item>673,W,文莱</item>
+        <item>65,X,新加坡</item>
+        <item>64,X,新西兰</item>
+        <item>30,X,希腊</item>
+        <item>36,X,匈牙利</item>
+        <item>963,X,叙利亚</item>
+        <item>34,X,西班牙</item>
+        <item>44,Y,英国</item>
+        <item>84,Y,越南</item>
+        <item>962,Y,约旦</item>
         <item>967,Y,也门</item>
+        <item>374,Y,亚美尼亚</item>
+        <item>235,Y,印度尼西亚</item>
+        <item>91,Y,印度</item>
+        <item>62,Y,印度尼西亚</item>
+        <item>98,Y,伊朗</item>
+        <item>964,Y,伊拉克</item>
+        <item>972,Y,以色列</item>
+        <item>39,Y,意大利</item>
+        <item>86,Z,中国</item>
+        <item>852,Z,中国香港</item>
+        <item>853,Z,中国澳门</item>
+        <item>886,Z,中国台湾</item>
+        <item>56,Z,智利</item>
         <item>260,Z,赞比亚</item>
-        <item>263,Z,津巴布韦</item>
+        <item>350,Z,直布罗陀</item>
     </string-array>
 
 </resources>

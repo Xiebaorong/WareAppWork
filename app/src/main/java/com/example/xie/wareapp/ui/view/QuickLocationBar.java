@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -18,9 +17,9 @@ import com.example.xie.wareapp.R;
 
 public class QuickLocationBar extends View {
     private static final String TAG = "QuickLocationBar";
-    private String characters[] = { "#", "A", "B", "C", "D", "E", "F", "G",
+    private String characters[] = { "A", "B", "C", "D", "E", "F", "G",
             "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
-            "U", "V", "W", "X", "Y", "Z" };
+            "U", "V", "W", "X", "Y", "Z" ,""};
     private int choose = -1;
     private Paint paint = new Paint();
     private OnTouchLetterChangedListener mOnTouchLetterChangedListener;
