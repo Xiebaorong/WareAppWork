@@ -21,8 +21,12 @@ import android.widget.TextView;
 import com.example.xie.wareapp.R;
 import com.example.xie.wareapp.mvp.presenter.Imp.LoginPresenterImp;
 import com.example.xie.wareapp.mvp.view.ILoginView;
+import com.mob.tools.utils.UIHandler;
 
 import butterknife.BindView;
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.ShareSDK;
+import cn.sharesdk.onekeyshare.OnekeyShare;
 
 /**
  * 登录Activity
@@ -93,7 +97,8 @@ public class LoginActivity extends BaseActivity implements ILoginView, CompoundB
             @Override
             public void onClick(View widget) {
                 Log.e(TAG, "registerOrForgetLogin: 我要注册");
-                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+//                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                showShare();
             }
 
             @Override
@@ -176,5 +181,49 @@ public class LoginActivity extends BaseActivity implements ILoginView, CompoundB
         loginPresenter.isSaveMag(isChecked);
     }
 
+    private void showShare() {
+//        OnekeyShare oks = new OnekeyShare();
+//        //关闭sso授权
+//        oks.disableSSOWhenAuthorize();
+//
+//        // title标题，微信、QQ和QQ空间等平台使用
+//        oks.setTitle("11111");
+//        // titleUrl QQ和QQ空间跳转链接
+//        oks.setTitleUrl("http://sharesdk.cn");
+//        // text是分享文本，所有平台都需要这个字段
+//        oks.setText("我是分享文本");
+//        // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
+//        oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
+//        // url在微信、微博，Facebook等平台中使用
+//        oks.setUrl("http://sharesdk.cn");
+//        // comment是我对这条分享的评论，仅在人人网使用
+//        oks.setComment("我是测试评论文本");
+//        // 启动分享GUI
+//        oks.show(this);
+
+//        Platform plat = ShareSDK.getPlatform(QQ.NAME);
+//        plat.showUser(null);
+    }
+
+    private void authorize(Platform plat) {
+//        if (plat == null) {
+//            popupOthers();
+//            return;
+//        }
+////判断指定平台是否已经完成授权
+//        if(plat.isAuthValid()) {
+//            String userId = plat.getDb().getUserId();
+//            if (userId != null) {
+//                UIHandler.sendEmptyMessage(MSG_USERID_FOUND, this);
+//                login(plat.getName(), userId, null);
+//                return;
+//            }
+//        }
+//        plat.setPlatformActionListener(this);
+//        // true不使用SSO授权，false使用SSO授权
+//        plat.SSOSetting(true);
+//        //获取用户资料
+//        plat.showUser(null);
+    }
 
 }

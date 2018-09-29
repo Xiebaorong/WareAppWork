@@ -86,6 +86,14 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:textSize="20sp"
-
             />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+        android:layout_below="@id/tv_registerAforget_login"
+        />
+
+
 </RelativeLayout>

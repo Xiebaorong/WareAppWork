@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.mob.sdk'
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -16,6 +16,23 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+MobSDK {
+    appKey "2813010695c6e"
+    appSecret "a4ea13198af4ef1105b6dbb26aceae8a"
+
+    ShareSDK {
+        devInfo {
+            SinaWeibo {
+                appKey "1080497418"
+                appSecret "72052a7838f27b7a6a3cd3c82227696f"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient false
+            }
         }
     }
 
