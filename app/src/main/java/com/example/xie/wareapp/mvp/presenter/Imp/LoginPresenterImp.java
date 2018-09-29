@@ -52,8 +52,8 @@ public class LoginPresenterImp implements ILoginPresenter {
 
             @Override
             public void onSuccess(Call call, Response response, String result) {
-                Type type = new TypeToken<User>() {
-                }.getType();
+//                Type type = new TypeToken<User>() {
+//                }.getType();
 //                User user = (User) GsonUtil.jsontoBean(result, type);
                 if (loginView.getUsername().equals("123") && ("123").equals(loginView.getPassword())) {
                     isLoginApp(true, 1);
@@ -72,7 +72,6 @@ public class LoginPresenterImp implements ILoginPresenter {
     }
 
 
-
     public void isLoginApp(boolean isLoginSuccess, int code) {
         if (isLoginSuccess) {
             if (isSaveUserMsg) {
@@ -80,7 +79,7 @@ public class LoginPresenterImp implements ILoginPresenter {
                 SharedPreferencesUtil.getInstance().saveUserMsg(loginView.getUsername(), loginView.getPassword(), isSaveUserMsg);
             } else {
                 Log.e(TAG, "isLoginApp: 不保存数据");
-                SharedPreferencesUtil.getInstance().saveUserMsg("","",false);
+                SharedPreferencesUtil.getInstance().saveUserMsg("", "", false);
             }
         }
         loginView.onLoginResult(isLoginSuccess, code);
@@ -94,7 +93,7 @@ public class LoginPresenterImp implements ILoginPresenter {
         return (String) SharedPreferencesUtil.getInstance().getOtherMessage("pass");
     }
 
-    public boolean getIsSave(){
+    public boolean getIsSave() {
         return (boolean) SharedPreferencesUtil.getInstance().getOtherMessage("isSave");
     }
 
